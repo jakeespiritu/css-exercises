@@ -1,5 +1,18 @@
 body {
   font-family: 'Courier New', Courier, monospace;
+  text-align: center; 
+} /* text-align for all text is much better */
+
+/*.title-container {
+  display: flex;
+  justify-content: center;
+}  -- my solution*/
+
+
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 52px;
 }
 
 img {
@@ -7,9 +20,18 @@ img {
   height: 100px;
 }
 
+.barberry, .chili, .pepper, .saffron {
+  flex: 0 1 200px; 
+}  /* could've put them all in the same class */
+
+.text {
+  flex-wrap: wrap;
+}
+
 .title {
   font-size: 36px;
   font-weight: 900;
+  margin-bottom: 32px;
 }
 
 /* do not edit this footer */
